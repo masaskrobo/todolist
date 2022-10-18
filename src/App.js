@@ -1,23 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
+import NameBox from './components/namebox/namebox';
+import Task from './components/task/task';
+
 
 function App() {
+  const tasks = [{
+    text: 'Zavrsii domaci',
+    isDone: true,
+
+  },
+  {
+    text: 'Usisaj sobu',
+    isDone: true,
+
+  },
+  {
+    text: 'Napravi rucak',
+    isDone: false,
+
+  }]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+        <div>
+          {tasks.map((item)=>{
+            return <Task task={item} isRed={false}/>
+
+          })}
+        </div>
+      <Footer/>
     </div>
   );
 }
