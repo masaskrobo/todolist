@@ -5,6 +5,7 @@ import Footer from './components/footer/footer';
 import NameBox from './components/namebox/namebox';
 import Task from './components/task/task';
 import React, {useState} from 'react';
+import InputAndButton from './components/inputandbutton/inputandbutton';
 
 
 
@@ -26,11 +27,13 @@ function App() {
     isDone: false,
 
   }]
-  const[task,setTasks]=useState(tasks)
+  const[listOfTasks,setTasks]=useState(tasks)
 
-  function changeTask(){
-    const copyTasks = [...task]
-    copyTasks[1].isDone= false;
+  function changeTask(itemNumbers){
+    const copyTasks = [...listOfTasks]
+    copyTasks[itemNumbers].isDone = ! 
+    copyTasks[itemNumbers].isDone
+
     setTasks(copyTasks)
   }
 
@@ -39,13 +42,14 @@ function App() {
     <div className="App">
       <Header/>
         <div>
-          {tasks.map((item)=>{
-            return <Task onChildClick = {changeTask} task={item} isRed={false}/>
+          {listOfTasks.map((item, index)=>{
+            return <Task onChildClick={()=>{changeTask(index)}} task={item} isRed={false}/>
 
           })}
           
           
         </div>
+       <InputAndButton/>
       <Footer/>
     </div>
   );
