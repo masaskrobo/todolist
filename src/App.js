@@ -36,12 +36,15 @@ function App() {
 
     setTasks(copyTasks)
   }
+  function addNewTask (){
+    console.log('Ja sam car!')
+  }
 
 
   return (
     <div className="App">
       <Header/>
-      <InputAndButton/>
+      <InputAndButton onSubmitTask={addNewTask}/> 
         <div>
           {listOfTasks.map((item, index)=>{
             return <Task onChildClick={()=>{changeTask(index)}} task={item} isRed={false}/>
