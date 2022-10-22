@@ -36,8 +36,8 @@ function App() {
 
     setTasks(copyTasks)
   }
-  function addNewTask (){
-    console.log('Ja sam car!')
+  function addNewTask (newTask){
+    console.log(newTask)
   }
 
 

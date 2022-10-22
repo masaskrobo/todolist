@@ -9,14 +9,14 @@ function InputAndButton({onSubmitTask}){
     }
 
     function clickButton(){
-        console.log('Click!')
+        onSubmitTask(newTask)
     }
     return (
-        <form>
+        <div>
             <p>{newTask}</p>
             <input onChange={ addTask} type="text"></input>
             <button onClick={clickButton}>Dodaj</button>
-        </form>
+        </div>
        
     )
 
