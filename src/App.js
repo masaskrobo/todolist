@@ -41,6 +41,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <InputAndButton/>
         <div>
           {listOfTasks.map((item, index)=>{
             return <Task onChildClick={()=>{changeTask(index)}} task={item} isRed={false}/>
@@ -49,7 +50,7 @@ function App() {
           
           
         </div>
-       <InputAndButton/>
+       
       <Footer/>
     </div>
   );
