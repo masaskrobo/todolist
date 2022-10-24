@@ -39,11 +39,14 @@ function App() {
   function addNewTask (newTask){
     console.log(newTask)
   }
+  function addnewButton(){
+      console.log('Klikni dugme')
+  }
 
 
   return (
     <div className="App">
-      <Header/>
+      <Header onButtonTask={addnewButton}/>
       <InputAndButton onSubmitTask={addNewTask}/> 
         <div>
           {listOfTasks.map((item, index)=>{
