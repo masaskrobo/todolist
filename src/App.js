@@ -37,10 +37,14 @@ function App() {
     setTasks(copyTasks)
   }
   function addNewTask (newTask){
-    console.log(newTask)
+     const ObjectTask = { text: newTask,
+        isDone: false
+
+      }
+      setTasks([...listOfTasks,  ObjectTask])
   }
-  function addnewButton(){
-      console.log('klikni dugmme')
+  function addnewButton(ime){
+      console.log(ime)
   }
 
   function addFotterButton(){

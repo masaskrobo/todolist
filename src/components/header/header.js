@@ -3,7 +3,7 @@ import './header.css'
 function Header ({onButtonTask}){
     
     function functionButton(){
-       onButtonTask()
+       onButtonTask('Masa')
     }
     return (
         <header>
