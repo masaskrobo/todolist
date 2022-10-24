@@ -43,6 +43,10 @@ function App() {
       console.log('klikni dugmme')
   }
 
+  function addFotterButton(){
+      console.log('Click me!')
+  }
+
 
   return (
     <div className="App">
@@ -57,7 +61,7 @@ function App() {
           
         </div>
        
-      <Footer/>
+      <Footer onFotterTask={addFotterButton}/>
     </div>
   );
 }

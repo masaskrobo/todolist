@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './header.css'
-function Header (onButtonTask){
-    const[btn,setBtn] = useState('')
+function Header ({onButtonTask}){
+    
     function functionButton(){
-       console.log('Klik')
+       onButtonTask()
     }
     return (
         <header>
