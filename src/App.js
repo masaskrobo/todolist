@@ -40,13 +40,13 @@ function App() {
     console.log(newTask)
   }
   function addnewButton(){
-      console.log('Klikni dugme')
+      console.log('klikni dugmme')
   }
 
 
   return (
     <div className="App">
-      <Header onButtonTask={addnewButton}/>
+      <Header  onButtonTask={addnewButton}/>
       <InputAndButton onSubmitTask={addNewTask}/> 
         <div>
           {listOfTasks.map((item, index)=>{
