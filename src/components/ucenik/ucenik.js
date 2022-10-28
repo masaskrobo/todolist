@@ -1,9 +1,10 @@
 
-function Ucenik({onUcenik}){
+function Ucenik(onUcenik){
     return(
         <div>
-           <p>{onUcenik.ime}</p>
-         
+           <p>{onUcenik.ime} </p> 
+          
+           
         
            
            
