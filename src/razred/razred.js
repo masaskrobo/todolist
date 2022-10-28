@@ -20,8 +20,8 @@ function Razred(){
     return(
         <div>
             <p>Razred</p>
-            <Ucenik onUcenik1={ucenik1}/>
-            <Ucenik onUcenik2={ucenik2}/>
+            <Ucenik onUcenik={ucenik1}/>
+            <Ucenik onUcenik={ucenik2}/>
         </div>
     )
 }
