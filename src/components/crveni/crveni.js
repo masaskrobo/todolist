@@ -1,10 +1,10 @@
 
-function CrveniKliker({onCrveniKliker}){
+function CrveniKliker({onKliker}){
     return(
         <div>
-            <button onClick={()=>{onCrveniKliker('obican bod')}}>Crveni</button>
-            <button onClick={()=>{onCrveniKliker('pola boda')}}>Pola boda</button>
-            <button onClick={()=>{onCrveniKliker('extra bod')}}>Dzoker</button>
+            <button onClick={()=>{onKliker('obican bod')}}>Crveni</button>
+            <button onClick={()=>{onKliker('pola boda')}}>Pola boda</button>
+            <button onClick={()=>{onKliker('extra bod')}}>Dzoker</button>
         </div>
     )
 

@@ -1,12 +1,13 @@
 import CrveniKliker from "../crveni/crveni";
 import PlaviKliker from '../plavi/plavi'
 import React, {useState} from "react";
+import Kliker from '../kliker/kliker.js'
 
 function Rupa(){
 const [poeniPlavog,setPoeniPlavog] = useState(0);
 const [poeniCrvenog, setPoeniCrveog] = useState(0)
 
-function Plavi(Bodovi){
+function Boje(Bodovi){
     
      if(Bodovi == 'extra bod'){
         setPoeniPlavog(poeniPlavog +3)
@@ -23,7 +24,7 @@ function Plavi(Bodovi){
 }
 
 
-function Crveni(Bodovi){
+function Boje(Bodovi){
    if( Bodovi == 'extra bod'){
       setPoeniCrveog(poeniCrvenog +3)
    } else if(Bodovi == 'pola boda'){
@@ -35,6 +36,10 @@ function Crveni(Bodovi){
     if(poeniCrvenog >= 10){
         alert('Pobedio Crveni Kliker')
     }
+
+    function BojeKlikera(){
+      alert('Koja je boja?')
+    }
 }
 
     return(
@@ -42,9 +47,9 @@ function Crveni(Bodovi){
             <p>Zapocni igru!</p>
             <p>Poeni plavog klikera:{poeniPlavog}</p>
             <p>Poeni crvenog klikera:{poeniCrvenog}</p>
-            <PlaviKliker onPlaviKliker={Plavi}/>
-            <CrveniKliker onCrveniKliker={Crveni}/>
-            
+           
+            <Kliker onKliker={ Boje}/>
+
         </div>
     )
 }
