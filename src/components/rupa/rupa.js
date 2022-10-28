@@ -1,5 +1,4 @@
-import CrveniKliker from "../crveni/crveni";
-import PlaviKliker from '../plavi/plavi'
+
 import React, {useState} from "react";
 import Kliker from '../kliker/kliker.js'
 
@@ -43,10 +42,11 @@ function Crveni(Bodovi){
     return(
         <div>
             <p>Zapocni igru!</p>
-            <p>Poeni plavog klikera:{poeniPlavog}</p>
             <p>Poeni crvenog klikera:{poeniCrvenog}</p>
-            <Kliker onKliker={Plavi}/>
-            <Kliker onKliker={Crveni}/>
+            <p>Poeni plavog klikera:{poeniPlavog}</p>
+            <Kliker boja = 'crveni' onKliker={Crveni}/>
+            <Kliker boja = 'plavi' onKliker={Plavi}/>
+            
             
 
         </div>

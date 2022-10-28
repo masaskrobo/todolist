@@ -1,6 +1,7 @@
 import './App.css';
 import Igra from './components/igra/igra';
 import Rupa from './components/rupa/rupa.js'
+import Dvoriste from './components/dvoriste/dvoriste.js'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Igra/>
       <Rupa/>
+      <Dvoriste/>
     </div>
   );
 }
