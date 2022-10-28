@@ -29,7 +29,7 @@ function Igra(){
 
         
         if(bodoviKingKonga >= 10){
-            alert('Pobedilo KingKong')
+            alert('Pobedio KingKong')
         }
     }
 
