@@ -7,7 +7,7 @@ function Rupa(){
 const [poeniPlavog,setPoeniPlavog] = useState(0);
 const [poeniCrvenog, setPoeniCrveog] = useState(0)
 
-function Boje(Bodovi){
+function Plavi(Bodovi){
     
      if(Bodovi == 'extra bod'){
         setPoeniPlavog(poeniPlavog +3)
@@ -24,7 +24,7 @@ function Boje(Bodovi){
 }
 
 
-function Boje(Bodovi){
+function Crveni(Bodovi){
    if( Bodovi == 'extra bod'){
       setPoeniCrveog(poeniCrvenog +3)
    } else if(Bodovi == 'pola boda'){
@@ -37,9 +37,7 @@ function Boje(Bodovi){
         alert('Pobedio Crveni Kliker')
     }
 
-    function BojeKlikera(){
-      alert('Koja je boja?')
-    }
+    
 }
 
     return(
@@ -47,8 +45,9 @@ function Boje(Bodovi){
             <p>Zapocni igru!</p>
             <p>Poeni plavog klikera:{poeniPlavog}</p>
             <p>Poeni crvenog klikera:{poeniCrvenog}</p>
-           
-            <Kliker onKliker={ Boje}/>
+            <Kliker onKliker={Plavi}/>
+            <Kliker onKliker={Crveni}/>
+            
 
         </div>
     )
