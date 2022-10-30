@@ -1,9 +1,10 @@
-import Ucenik from  '../components/ucenik/ucenik.js'
+import Ucenik from  '../components/ucenik/ucenik.js';
+import './razred.css'
 function Razred(){
     const ucenik1={
         ime:'Masa',
         godiste:'2002',
-        omiljeniPredmet: 'srpski',
+        predmet: 'srpski',
         vladanje:'5',
         razred:'2'
 
@@ -12,14 +13,14 @@ function Razred(){
     const ucenik2={
         ime:'Luka',
         godiste:'2000',
-        omiljeniPredmet: 'fizicko',
+        predmet: 'fizicko',
         vladanje:'4',
         razred: '4'
 
     }
     return(
         <div>
-            <p>Razred</p>
+            <p className='razred'>Razred</p>
             <Ucenik onUcenik={ucenik1}/>
             <Ucenik onUcenik={ucenik2}/>
         </div>
