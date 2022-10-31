@@ -3,8 +3,8 @@ function Task({onTask}){
     return(
         <div>
             <p>Task</p>
-            <p>{onTask.text}</p>
-            <button>{onTask.isDone}</button>
+            <p>Text:{onTask.text}</p>
+            <button>False{onTask.isDone}</button>
         </div>
     )
 }
