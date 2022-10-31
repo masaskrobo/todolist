@@ -17,11 +17,14 @@ function ToDoList(){
        isDone: true
     },
 ]
+   function ClickButton(){
+     console.log('Click!!')
+   }
     return(
         <div>
             <p>To Do List</p>
             {DoTasks.map(function(item){
-                return  <Task onTask={item}/>
+                return  <Task onButton={ClickButton} onTask={item}/>
             })}
            
         </div>
