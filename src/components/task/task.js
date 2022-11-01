@@ -1,12 +1,12 @@
 
-function Task({onTask, onButton, redniBroj}){
+function Task({onTask, onButton}){
 
     return(
         <div>
         
             <p>{onTask.text}</p>
             <button onClick={onButton}> {onTask.isDone ? 'uradjeno' : 'nije uradjeno'}</button>
-            <button onClick= {redniBroj}>Dugme</button>
+            
         </div>
     )
 }
