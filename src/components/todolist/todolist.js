@@ -1,4 +1,5 @@
 import Task from '../task/task.js'
+import React, {useState} from 'react';
 function ToDoList(){
     const DoTasks =[
     {  text:'Finish homework',
@@ -17,14 +18,25 @@ function ToDoList(){
        isDone: true
     },
 ]
-   function ClickButton(){
-     console.log('Click!!')
+   const [listOfTasks, setTasks] = useState(DoTasks)
+   function ClickButton(tasks){
+      const copyDoTasks = [...DoTasks]
+      copyDoTasks[tasks].isDone = !
+      copyDoTasks[tasks].isDone
+
+
+   
+
+        
+   }
+   function broj(){
+     console.log('klik')
    }
     return(
         <div>
             <p>To Do List</p>
             {DoTasks.map(function(item){
-                return  <Task onButton={ClickButton} onTask={item}/>
+                return  <Task redniBroj={broj} onButton={ClickButton} onTask={item}/>
             })}
            
         </div>
