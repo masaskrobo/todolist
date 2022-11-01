@@ -19,25 +19,19 @@ function ToDoList(){
     },
 ]
    const [listOfTasks, setTasks] = useState(DoTasks)
-   function ClickButton(tasks){
-      const copyDoTasks = [...DoTasks]
-      copyDoTasks[tasks].isDone = !
-      copyDoTasks[tasks].isDone
+   function ClickButton(taskNumber){
+  const copyListOfTasks=[...listOfTasks]
+  copyListOfTasks[taskNumber].isDone = ! 
+  copyListOfTasks[taskNumber].isDone
 
-
-   
-
-        
+  setTasks(copyListOfTasks);
+    
    }
-  
-
-
-
     return(
         <div>
             <p>To Do List</p>
-            {DoTasks.map(function(item){
-                return  <Task redniBroj='11' onButton={ClickButton} onTask={item}/>
+            {DoTasks.map(function(item,index){
+                return  <Task redniBroj={index} onButton={ClickButton} onTask={item}/>
             })}
            
         </div>
