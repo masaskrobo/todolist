@@ -37,7 +37,7 @@ function ToDoList(){
         <div>
             <p>To Do List</p>
             {DoTasks.map(function(item){
-                return  <Task redniBroj={'11'} onButton={ClickButton} onTask={item}/>
+                return  <Task redniBroj='11' onButton={ClickButton} onTask={item}/>
             })}
            
         </div>
