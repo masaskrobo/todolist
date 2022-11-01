@@ -27,11 +27,16 @@ function ToDoList(){
   setTasks(copyListOfTasks);
     
    }
+   function DeleteButton(){
+      
+
+   }
+
     return(
         <div>
             <p>To Do List</p>
-            {DoTasks.map(function(item,index){
-                return  <Task redniBroj={index} onButton={ClickButton} onTask={item}/>
+            {listOfTasks.map(function(item,index){
+                return  <Task onDelete={DeleteButton} redniBroj={index} onButton={ClickButton} onTask={item}/>
             })}
            
         </div>
