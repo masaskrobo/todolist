@@ -12,7 +12,7 @@ function clickButton(){
 }
     return(
         <div>
-            <input onChange={addText} type='text'></input>
+            <input value={input} onChange={addText} type='text'></input>
             <button onClick={clickButton}>Dodaj</button>
         </div>
     )
