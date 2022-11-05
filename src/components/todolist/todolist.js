@@ -1,5 +1,9 @@
-import Task from '../task/task.js'
-import Form from '../form/form'
+import Task from '../task/task.js';
+import Form from '../form/form';
+import '../task/task.css';
+import '../form/form.css';
+import '../todolist/todolist.css';
+import {AiOutlineRocket} from 'react-icons/ai'
 import React, {useState} from 'react';
 function ToDoList(){
     const DoTasks =[
@@ -45,14 +49,26 @@ function ToDoList(){
    }
 
     return(
-        <div>
-            <p>To Do List</p>
+      
+      <div className='container'>
+          <div className='title_background'>
+              <h1 className='title'>
+               <AiOutlineRocket className='rocket__icon'/>
+                <font color="#2595E7">to</font>
+                <font color="#6E31B8">do</font>
+               
+              </h1>
+            </div>
+          <div className='container_box'> 
+         
            <Form onForm={AddNewTask}/>
             {listOfTasks.map(function(item,index){
                 return  <Task onDelete={DeleteButton} redniBroj={index} onButton={ClickButton} onTask={item}/>
             })}
            
         </div>
+      </div>
+        
     )
 }
 export default ToDoList;
