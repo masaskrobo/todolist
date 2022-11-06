@@ -1,13 +1,16 @@
 .container{
-    padding: 40px;
-    margin: auto;
-    max-width: 100%;
-    width: 1170px;
+    height: 100vh;
     box-sizing: border-box
 }
 .container_box{
-    background-color: rgb(18, 17, 17);
+    background-color: #121111;
     padding: 50px;
+}
+.container_box__tasks{
+    display: flex;
+    justify-content: space-evenly;
+   
+   
 }
 
 .title{
@@ -26,3 +29,20 @@
     right: 5px;
     font-size: 30px;
 }
+.input_container__box__create{
+   
+    color: #2595E7;
+    font-weight: bold;
+}
+.input_container__box__done{
+    color: #6E31B8  ;
+    font-weight: bold;
+}
+
+.input_container__box{
+    display: flex;
+}
+.button_numb{
+    color: white;
+    
+ }

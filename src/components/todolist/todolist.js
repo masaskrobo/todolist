@@ -62,6 +62,12 @@ function ToDoList(){
           <div className='container_box'> 
          
            <Form onForm={AddNewTask}/>
+           
+           <div className='container_box__tasks'>
+           <p className='input_container__box__create'>Create Tasks</p>
+           <p className='input_container__box__done'>Done Tasks</p>
+           </div>
+      
             {listOfTasks.map(function(item,index){
                 return  <Task onDelete={DeleteButton} redniBroj={index} onButton={ClickButton} onTask={item}/>
             })}

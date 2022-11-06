@@ -1,13 +1,15 @@
-
+.task__container{
+    margin-bottom: 10px;
+}
 
 .tasks__container__box{
     display: flex;
     justify-content: space-between;
     background-color: rgb(45, 44, 44);
     width: 539px;
-    margin-top: 10px;
-    margin-left: 220px;
-    text-align: start;  
+    margin: auto;
+    text-align: start;
+     
 }
 .tasks__container_text{
     color: white;
