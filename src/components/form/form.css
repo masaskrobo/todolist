@@ -4,14 +4,17 @@
     position: relative;
     bottom: 60px;
 }
+.input_container__box{
+    width: 483px;
+}
 .input{
      border: none;
      border-radius: 5px;
-     width: 450px;
      padding: 10px 0px 10px 15px;
      margin-right: 5px;
      color: rgb(113, 110, 110);
      background-color: rgb(45, 44, 44);
+     width: 97%;
     
      
      
@@ -22,13 +25,13 @@
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    padding: 10px 18px 10px 0px;
+    padding: 10px 4px 10px 6px;
 }
 .plus__icons{
     color: white;
     position: relative;
     top: 2px;
-    left: 56px;
+    left: 2px;
     font-size: 13px;
 }
 

@@ -8,11 +8,22 @@
 }
 .container_box__tasks{
     display: flex;
-    justify-content: space-evenly;
-   
-   
+    justify-content: space-between;
+    width: 539px;
+    margin: auto;
+    display: flex;
+    
 }
-
+.container_box__tasks__numb{
+    display: flex;
+}
+.tasks__numb{
+    background-color: rgb(45, 44, 44);
+    color: white;
+    padding: 2px 17px;
+    margin-left: 8px;
+    border-radius: 15px;
+}
 .title{
     text-align: center;
     padding-top: 20px;
@@ -37,12 +48,11 @@
 .input_container__box__done{
     color: #6E31B8  ;
     font-weight: bold;
+    
 }
 
 .input_container__box{
     display: flex;
 }
-.button_numb{
-    color: white;
-    
- }
+
+ 

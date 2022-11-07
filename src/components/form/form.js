@@ -26,7 +26,7 @@ function clickButton(){
             <input className='input' placeholder='Add a new Task' value={input} onChange={addText} type='text'></input>
           </div>
            <div>
-            <button className='button' onClick={clickButton}><AiOutlinePlusCircle className='plus__icons'/>Create</button>
+            <button className='button' onClick={clickButton}>Create<AiOutlinePlusCircle className='plus__icons'/></button>
            </div>
         </div>
     )

@@ -63,10 +63,18 @@ function ToDoList(){
          
            <Form onForm={AddNewTask}/>
            
+           
            <div className='container_box__tasks'>
-           <p className='input_container__box__create'>Create Tasks</p>
-           <p className='input_container__box__done'>Done Tasks</p>
+                <div className='container_box__tasks__numb'>
+                   <p className='input_container__box__create'>Create Tasks</p>
+                   <p className='tasks__numb'>5</p>
+                </div>  
+                <div className='container_box__tasks__numb'>
+                   <p className='input_container__box__done'>Done Tasks</p>
+                   <p className='tasks__numb'>2 of 5</p>
+                 </div> 
            </div>
+
       
             {listOfTasks.map(function(item,index){
                 return  <Task onDelete={DeleteButton} redniBroj={index} onButton={ClickButton} onTask={item}/>
