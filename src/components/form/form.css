@@ -35,3 +35,36 @@
     font-size: 13px;
 }
 
+@media (max-width: 647px){
+    .button{
+        width: 66px;
+       }
+    .input_container__box {
+        width: 398px;
+    }   
+}
+@media (max-width:515px){
+    .input_container__box {
+        width: 333px;
+    }
+}
+
+@media (max-width:384px){
+   .form_container{
+    display: block;
+
+   }
+   .input_container__box {
+    width: 287px;
+}
+   .input{
+    width: 67%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.button{
+    margin-left: 97px;
+}
+
+}
+

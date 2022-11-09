@@ -6,24 +6,8 @@ import '../todolist/todolist.css';
 import {AiOutlineRocket} from 'react-icons/ai'
 import React, {useState} from 'react';
 function ToDoList(){
-    const DoTasks =[
-    {  text:'Finish homework',
-       isDone: false
-    },
-    {  text:'Clean the room',
-       isDone: false
-    },
-    {  text:'Prepare lunch',
-       isDone: true
-    },
-    {  text:'Go to the gym',
-       isDone: false
-    },
-    {  text:'Wash the dishes',
-       isDone: true
-    },
-]
-   const [listOfTasks, setTasks] = useState(DoTasks)
+    
+   const [listOfTasks, setTasks] = useState([])
    function ClickButton(taskNumber){
   const copyListOfTasks=[...listOfTasks]
   copyListOfTasks[taskNumber].isDone = ! 
@@ -48,6 +32,13 @@ function ToDoList(){
       setTasks([...listOfTasks,AddNewTask])
    }
 
+   const newArray = listOfTasks.filter(function(el){
+      return el.isDone === true
+     
+   } )
+   
+
+
     return(
       
       <div className='container'>
@@ -67,11 +58,11 @@ function ToDoList(){
            <div className='container_box__tasks'>
                 <div className='container_box__tasks__numb'>
                    <p className='input_container__box__create'>Create Tasks</p>
-                   <p className='tasks__numb'>5</p>
+                   <p className='tasks__numb'> {listOfTasks.length} </p>
                 </div>  
                 <div className='container_box__tasks__numb'>
                    <p className='input_container__box__done'>Done Tasks</p>
-                   <p className='tasks__numb'>2 of 5</p>
+                   <p className='tasks__numb'>{newArray.length}</p>
                  </div> 
            </div>
 
