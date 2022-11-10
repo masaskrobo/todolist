@@ -46,57 +46,21 @@ button{
 
 @media (max-width:647px){
     .tasks__container__box{
-        width: 518px;
+        width: 100%;
     }
+    .tasks__container_text {
+       padding-left: 20px;
+    }
+    
 }
-@media (max-width: 588px){
+@media (max-width: 501px){
     .tasks__container__box {
-    width: 462px;
+    width: 100%;
 }
    .tasks__container_text {
     width: 350px;
 }
 }
-@media (max-width:515px){
-    .tasks__container__box {
-        width: 414px;
-    }
-    .tasks__container_text {
-        width: 300px;
-    }
-}
 
 
-@media (max-width: 491px){
-.tasks__container__box {
-    width: 345px;
-}
-.tasks__container_text {
-    width: 226px;
-}
 
-}
-@media (max-width:425px){
-    .tasks__container__box {
-        width: 325px;
-    }
-    .tasks__container_text {
-        width: 210px;
-    }
-}
-@media (max-width:384px){
-    .tasks__container__box {
-        width: 260px;
-    }
-    .tasks__container_text {
-        width: 158px;
-    }
-}
-@media (max-width:320px){
-    .tasks__container__box {
-        width: 191px;
-    }
-    .tasks__container_text {
-        width: 92px;
-    }
-}

@@ -56,39 +56,26 @@
 .input_container__box{
     display: flex;
 }
+
+
+
 @media (max-width:647px){
     .container_box__tasks{
-        width: 518px;
+        width: 100%;
     }
 }
-@media (max-width: 588px){
+@media (max-width: 501px){
     .container_box__tasks {
-        width: 453px;
+        width: 100%;
     }
 }
-@media (max-width:515px){
+@media (max-width: 412px){
     .container_box__tasks{
-        width: 413px;
-    }
-}
-
-@media (max-width: 491px){
-    .input_container__box {
-        width: 284px;
-    }
-    .container_box__tasks__numb{
-       width: 199px;
-    }
-}
-@media (max-width:425px){
-    .container_box__tasks {
-        width: 367px;
-    }
-}
-@media (max-width:384px){
-    .container_box__tasks{
-        margin-left: 13px;
         display: block;
     }
+
 }
+
+
+
     
