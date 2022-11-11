@@ -9,7 +9,7 @@ function addText(event){
    setInput(event.target.value)
 
 }
-function createTasks(){
+function createdTasks(){
     onForm(input)
     setInput('')
 }
@@ -18,7 +18,7 @@ return(
       <div className='form_container'>
             <input className='input' placeholder='Add a new Task' value={input} onChange={addText} type='text'></input>
                <div>
-                  <button className='button' onClick={createTasks}>Create<AiOutlinePlusCircle className='plus__icons'/></button>
+                  <button className='button' onClick={createdTasks}>Create<AiOutlinePlusCircle className='plus__icons'/></button>
                </div>
       </div>
 )

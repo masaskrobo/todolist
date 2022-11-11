@@ -28,12 +28,11 @@
 }
 .title{
     text-align: center;
-    padding-top: 20px;
     padding-right: 30px;
 }
 .title_background{
     background-color: rgb(7, 7, 7);
-    padding: 5px;
+    padding: 25px;
 }
 .rocket__icon{
     color:#2595E7;

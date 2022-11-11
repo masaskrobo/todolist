@@ -47,9 +47,9 @@ return(
                   <font color="#6E31B8">do</font>
                </h1>
          </div>
-          <div className='container_box'> 
+          <div className='container_box'>
+
                <Form onForm={AddNewTask}/>
-               
                   <div className='container_box__tasks'>
                        <div className='container_box__tasks__numb'>
                           <p className='input_container__box__create'>Create Tasks</p>
